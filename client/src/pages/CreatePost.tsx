@@ -55,13 +55,13 @@ export const CreatePost = (): ReactElement => {
 			try {
 				setGeneratingImg(true)
 				const response = await fetch(
-					'http://localhost:8080/api/v1/dalee',
+					'https://dall-e-kp7q.onrender.com/api/v1/dalee',
 					{
 						method: 'POST',
 						headers: {
 							'Content-type': 'application/json'
 						},
-						body: JSON.stringify({ prompt: `Дизайн кредитной карты: ${form.prompt}` })
+						body: JSON.stringify({ prompt: `Лицевая сторона кредитной карты: ${form.prompt}` })
 					})
 
 				const data: { photo: string } = await response.json()

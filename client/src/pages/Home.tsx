@@ -65,8 +65,6 @@ export const Home = (): ReactElement => {
 		})
 	}, [])
 
-	console.log(allPosts)
-
 	return (
 		<section className='max-w-7xl mx-auto'>
 			<div>
