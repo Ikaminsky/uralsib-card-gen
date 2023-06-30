@@ -61,7 +61,7 @@ export const CreatePost = (): ReactElement => {
 						headers: {
 							'Content-type': 'application/json'
 						},
-						body: JSON.stringify({ prompt: `Лицевая сторона кредитной карты: ${form.prompt}` })
+						body: JSON.stringify({ prompt: form.prompt })
 					})
 
 				const data: { photo: string } = await response.json()
